@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chhai Developer</title>
+<title>My CV profile</title>
 <meta charset="UTF-8">
-<link rel="shortcut icon" type="image/png" href="https://chhai-developer.github.io/avatar.jpg"sizes="192x192">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -25,7 +24,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/avatar.jpg" style="width:100%" alt="Avatar">
+          <img src="C:\Users\ftrac\OneDrive\Pictures\1649314212648.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
             <h2 style="color:aliceblue">Chhai Developer</h2>
           </div>
@@ -124,13 +123,76 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- End Right Column -->
     </div>
-    
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103016785631698");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : false,
+          version          : 'v12.0'
+        FB.CustomerChat.update({  
+  logged_in_greeting: 'Hello There!',
+  logged_out_greeting: 'Log in to Chat with Us',  
+  ref: 'coupon_15',
+});
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   <!-- End Grid -->
   </div>
   
   <!-- End Page Container -->
 </div>
-
-
+<style>
+.co-foot a{
+width: 40px;
+height: 40px;
+display: inline-block;
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #053efcfd;
+background-color: rgba(255, 255, 255, 0.774);
+}
+.co-foot a:hover{
+color: #9c378f;
+background-color: #ffffff;
+}
+</style>
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <h4>Find me on social media.</h4>
+  <div class="co-foot">
+  <a href="https://web.facebook.com/chhai-developer"><i class="fa fa-facebook-official"></i></a>
+  <a href=""><i class="fa fa-instagram"></i></a>
+  <a href="https://t.me/chhai_developer"><i class="fa fa-telegram"></i></a>
+  <a href=""><i class="fa fa-pinterest-p"></i></a>
+  <a href=""><i class="fa fa-twitter"></i></a>
+  <a href=""><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p>Powered by <a href="chhai-developer.github.io" target="_blank">Chhai Developer</a></p>
+  <p>Copyright © 2022 by chhai.developer.github.io</p>
+  <p>All right resived</p>
+</footer>
 </body>
 </html>
