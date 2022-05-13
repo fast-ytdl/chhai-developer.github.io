@@ -141,13 +141,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          xfbml            : false,
+          xfbml            : true,
           version          : 'v12.0'
-        FB.CustomerChat.update({  
-  logged_in_greeting: 'Hello There!',
-  logged_out_greeting: 'Log in to Chat with Us',  
-  ref: 'coupon_15',
-});
         });
       };
 
