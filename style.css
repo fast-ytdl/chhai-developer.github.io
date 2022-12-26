@@ -88,6 +88,10 @@ ul{
 h5 {
     color: #bbbbbb;
 }
+}
+h6 {
+    color: #bbbbbb;
+}
 /* Responsive webpage */
 @media(max-width:767px){
     .footer-col {
